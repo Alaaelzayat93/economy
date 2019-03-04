@@ -43,9 +43,9 @@ color: #000;
 }
 /*********header***********/
 header{
-    width:100%;
+    width:80%;
     background: #0033cc;
-
+    margin: auto;
 }
 header .logo{
     width:20%;
@@ -68,7 +68,7 @@ list-style: none;
 }
 header .nav-list  li{
 margin-left: 40px;
-line-height: 2.5;
+line-height: 3.5;
 
 }
 header .nav-list  li a{
