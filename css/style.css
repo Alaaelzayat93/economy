@@ -27,6 +27,7 @@ body{
     background: rgba(0,0,0,0.5);
 
 }
+
 .sticky{
     background:#22923c;
     color: #FFF;
@@ -94,7 +95,7 @@ header nav .nav-list a:hover{
 }
 .nav-list .list a:hover
  {
-    color: ##0066cc !important;
+    color: #0066cc !important;
     background-color: rgba(0, 0, 0, .3) !important;
     padding: 10px 20px;
 }
@@ -190,6 +191,9 @@ color: #fff;
  display: block;
  margin-left: 50px;
 }
+.economy .row .root p{
+    width: 131%;
+}
 
 .economy .row .card img{
     width: 100%;
@@ -265,6 +269,9 @@ section.services .feet{
     padding: 20px;
     margin-bottom: 20px;
     box-shadow:0 0 10px #ddd;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+height: 363px;
 
 }
 section.services .feet:hover{
@@ -425,10 +432,11 @@ footer .conrad .detail{
 footer .conrad .detail p{
     font-size: 13px;
 }
-footer .conrad .detail span{
-    color: #0080ff;
-    margin-top: -10px;
-    font-size: 12px;
+footer .conrad .detail .time{
+    position: relative;
+    font-style: italic;
+    color: #24a3d8;
+    font-size:11px; 
 }
 
 footer .conrad h3{
