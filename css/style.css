@@ -267,6 +267,13 @@ section.services .feet{
     box-shadow:0 0 10px #ddd;
 
 }
+section.services .feet:hover{
+    background: #1a53ff;
+    color:#fff;
+}
+section.services .feet:hover p{
+    color:#fff;
+}
 
 section.services .feet i{
     font-size: 30px;
