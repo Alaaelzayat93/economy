@@ -1,19 +1,26 @@
- 
-/*
+/*global $, window, document*/
 $(document).ready(function () {
   'use strict';
 
+  $(".toggle-nav").click(function () {
+    $(".nav-list").slideDown();
+  }); 
+
+
+
 
 /*when scroll body*/
-  /*$(window).on('scroll', function () {
+  $(window).on('scroll', function () {
 
     var vc = $(this).scrollTop(); //scroll size
-    if (vc >= 50) {
+    if (vc > 100) {
       $('header').addClass('sticky');
     } else {
       $('header').removeClass('sticky');
     }
-  });*/
+  });
+
+
   /*ACORDION*/
   var acc = document.getElementsByClassName("accordion");
 var i;
@@ -33,6 +40,7 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 };
+});
 
 window.onload = function () {
   "use strict";
@@ -47,3 +55,8 @@ window.onload = function () {
       txt4.style = "display:none";
       txt5.style = "display:none";
 }
+
+
+
+
+

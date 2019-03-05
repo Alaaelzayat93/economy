@@ -27,11 +27,21 @@ body{
     background: rgba(0,0,0,0.5);
 
 }
+header i.fa{
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    cursor: pointer;
+    display: none;
+
+}
 
 .sticky{
     background:#22923c;
     color: #FFF;
     height: 100px;
+    width: 80%;
+    margin: auto;
 }
 .sticky h2{
     padding: 20px;
@@ -47,6 +57,7 @@ header{
     width:80%;
     background: #0033cc;
     margin: auto;
+
 }
 header .logo{
     width:20%;
@@ -87,7 +98,13 @@ header nav .nav-list a:hover{
     header .logo{
         text-align: center;
     }
-    
+
+    header i.fa{
+        display: block;
+        color: red;
+
+
+    }
     header nav .nav-list{
         display: none;
         text-align: center;
@@ -186,12 +203,13 @@ color: #fff;
 .economy .row .card{
     margin-right: -32px;
     overflow: hidden;
+    box-shadow: 0 0 10px #ccc;
 }
 .economy .row .root{
  display: block;
  margin-left: 50px;
 }
-.economy .row .root p{
+.economy .row .root p#fast{
     width: 131%;
 }
 
@@ -199,9 +217,16 @@ color: #fff;
     width: 100%;
 
 }
-.economy .row .card img:hover {
-    transform: rotate(20deg); 
-    transition: all 0.5s ease-in-out;
+.economy .row .card .card-bottom-top{
+    display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+}
+.economy .row .card:hover .card-bottom-top{
+    display: inline;
+    transition: all 0.10s ease-in-out;
 }
 .economy .row h4{
 font-size: 2rem;
@@ -233,6 +258,14 @@ color: #333;
     border-radius: 20px;
     color: #fff;
     transition:all 0.5s ease-in-out;
+}
+@media (max-width: 575px){
+    .economy .row .root p#fast{
+    width: 200%;
+}
+.economy .row .card{
+    margin-top: 20px;
+    }
 }
 /*end about*/
 /*services*/
@@ -272,6 +305,7 @@ section.services .feet{
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 height: 363px;
+    box-shadow: 0 0 10px #ddd;
 
 }
 section.services .feet:hover{
@@ -305,7 +339,6 @@ section.services .feet p{
 /*blog*/
 .blog{
     background-image: url(../images/cover.jpg);
-    background-attachment: fixed;
     background-position: center;
     height: 400px;
     background-repeat: no-repeat;
@@ -323,6 +356,10 @@ section.services .feet p{
 .blog h2 span{
    color: #1a53ff; 
 }
+@media (max-width: 575px){
+    .blog h2{width:200%;}
+    }
+
 /*why-choose-us*/
 section.why-choose-us .line{
     width: 200px;
@@ -385,22 +422,44 @@ section.question .images .left-2{
 /*ACCORDION*/
 /* Style the buttons that are used to open and close the accordion panel */
 .question .Box .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: #ccc;
+  color: #000;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 17px;
   transition: 0.4s;
 }
 
-.question .Box .panel {
+
+.question .Box .panal {
   padding: 0 18px;
-  background-color: white;
+  background-color: #fff;
   overflow: hidden;
+  color: #555;
+}
+@media(max-width: 575px){
+    .question .Box .accordion{
+        width: 156%;
+
+    }
+    .question .Box .panal {
+        width:200%;
+    }
+    section.question .images{
+        width: 50%
+    }
+    section.question .images .right-1{
+    
+    width:30%;
+}
+section.question .images .right-2{
+    
+    width: 20%;
+}
 }
 /*footer*/
 /*footer*/
@@ -418,14 +477,14 @@ footer .conrad{
     margin-top: 100px;
 }
 footer .conrad img{
-    width:30%;
+    width:34%;
     height: 80px;
     float:left;
     margin-right: 20px;
     display: block;
 }
 footer .conrad .detail{
-    width:60%;
+    width:50%;
     float: left;
     
 }
@@ -445,7 +504,7 @@ font-size: 23px;
 footer .conrad a{
     display: block;
     line-height: 2.5;
-    color: #9a9494;
+    color: #fff;
     text-decoration: none;
 }
 footer .conrad input{
