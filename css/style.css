@@ -34,10 +34,7 @@ header i.fa{
     cursor: pointer;
     display: none;
 }
-    nav{
-    height: 70px;
-
-}
+   
 
 .sticky{
     background:#22923c;
@@ -57,10 +54,15 @@ color: #000;
 }
 /*********header***********/
 header{
-    width:80%;
-    background: #0033cc;
-    margin: auto;
+    background: #fff;
+        padding-top:2em;
 
+}
+header .row {
+    width:100%;
+    box-shadow: 4px 5px 45px #333;
+    padding:10px 0;
+    background: #0033cc;
 }
 header .logo{
     width:20%;
@@ -76,14 +78,13 @@ header .nav-list{
 width:100%;
 
 float: right;
-display: flex;
-justify-content: space-around;
 list-style: none;
-
+display:flex;
+justify-content: center;
 }
 header .nav-list  li{
 margin-left: 40px;
-line-height: 3.5;
+
 
 }
 header .nav-list  li a{
@@ -97,26 +98,36 @@ header nav .nav-list a:hover{
     background: #fff;
 }
 @media (max-width: 575px){
-    header{background: #000;}
+    header{background: #0033cc;color: #fff}
     header .nav-list{
         display: block;
+    }
+    header .nav-list li{
+        display: inline-block;
     }
     header .logo{
         text-align: center;
     }
 
-    header i.fa{
-        display: block;
-        color: red;
-    }
        
-
-
-
-    header nav .nav-list{
-        display: none;
+       header nav .nav-list li a{
         text-align: center;
+        float:none;
     }
+}
+@media screen and (max-width: 900px) {
+  ul.nav-list {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  ul.nav-list li a {
+    float: left;
+    padding: 15px;
+  }
+  
+ 
 }
 .nav-list .list a:hover
  {
@@ -500,6 +511,8 @@ section.question .images .left-2{
     display: block;
     width: 50%;
         margin:auto;
+            height: 40px;
+    border-radius: 20px
        
 
 }
@@ -509,7 +522,10 @@ section.question .images .left-2{
 }
 .map .contactus img{
     width: 40%;
+    animation: pulse 2.5s linear infinite;
 }
+
+
 .map .contactus h1{
     color: #000;
     font-size: 26px;
@@ -518,9 +534,11 @@ section.question .images .left-2{
     display: block;
     width: 50%;
     margin:auto;
+        height: 40px;
+    border-radius: 20px
 }
 .map .contactus button{
-     background: #22923c;
+     background: #0033cc;
     color: #fff;
     outline: 0;
     border: 0;
