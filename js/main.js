@@ -5,12 +5,13 @@ $(document).ready(function () {
   $(".toggle-nav").click(function () {
     $(".nav-list").slideDown();
   }); 
+});
 
 
 
 
 /*when scroll body*/
-  $(window).on('scroll', function () {
+  $(window).scroll(function () {
 
     var vc = $(this).scrollTop(); //scroll size
     if (vc > 100) {
