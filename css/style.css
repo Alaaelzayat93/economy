@@ -11,6 +11,10 @@
     -o-box-sizing:border-box;
 
 }
+ul {
+    margin:0;
+    padding:0;
+}
 html, body { max-width: 100%;}
 body{
     font-family: 'Roboto Slab', serif;
@@ -35,26 +39,17 @@ header i.fa{
     display: none;
 }
    
-
 .sticky{
-    background:#22923c;
+    background:#5E5EDE;
     color: #FFF;
-    height: 100px;
-    width: 80%;
-    margin: auto;
-}
-.sticky h2{
-    padding: 20px;
-}
-.sticky a{
-    color:#fff;
-}
-.sticky a:hover{
-color: #000;
+      position: fixed;
+  top: 0;
+  width: 100%;
+z-index: 99999
 }
 /*********header***********/
 header{
-    background: #fff;
+    background: #6666ff;
         padding-top:2em;
 
 }
@@ -62,7 +57,6 @@ header .row {
     width:100%;
     box-shadow: 4px 5px 45px #333;
     padding:10px 0;
-    background: #0033cc;
 }
 header .logo{
     width:20%;
@@ -76,15 +70,14 @@ header .logo h2 span{
 }
 header .nav-list{
 width:100%;
-
+    margin-top: 14px;
 float: right;
 list-style: none;
-display:flex;
-justify-content: center;
+
 }
 header .nav-list  li{
 margin-left: 40px;
-
+display:inline-block;
 
 }
 header .nav-list  li a{
@@ -94,52 +87,45 @@ header .nav-list  li a{
 }
 
 header nav .nav-list a:hover{
-    color:;
-    background: #fff;
+    color: #fff;
+    background: linear-gradient(60deg ,#5555ff,#90f);
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 2s all ease-in-out;
 }
 @media (max-width: 575px){
-    header{background: #0033cc;color: #fff}
+    header{background: #000;}
     header .nav-list{
         display: block;
     }
-    header .nav-list li{
-        display: inline-block;
+    header .nav-list li {
+        display: block
+    }
+    header .nav-list li a {
+        letter-spacing: 5px;
+        margin-bottom: 3em;
+        font-weight: 300;
+        font-size: 20px
     }
     header .logo{
         text-align: center;
     }
 
+    header i.fa{
+        display: block;
+        color: red;
+    }
        
-       header nav .nav-list li a{
+
+
+
+    header nav .nav-list{
+        display: none;
         text-align: center;
-        float:none;
     }
 }
-@media screen and (max-width: 900px) {
-  ul.nav-list {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  
-  ul.nav-list li a {
-    float: left;
-    padding: 15px;
-  }
-  
- 
-}
-.nav-list .list a:hover
- {
-    color: #0066cc !important;
-    background-color: rgba(0, 0, 0, .3) !important;
-    padding: 10px 20px;
-}
-.nav-list .list a:hover
- {
-    -webkit-transform: scale(1.1, 1);
-    transform: scale(1.1, 1);
-}
+
 /*end header*/
 /*home sections*/
 .home{
