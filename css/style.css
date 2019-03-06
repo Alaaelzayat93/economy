@@ -370,7 +370,7 @@ section.services .feet p{
    color: #1a53ff; 
 }
 @media (max-width: 575px){
-    .blog h2{font-size: 18px !important}
+    .blog h2{font-size: 25px !important}
     }
 
 /*why-choose-us*/
@@ -474,88 +474,149 @@ section.question .images .left-2{
 }
 
 }
-
-/*footer*/
-.contact{
-    width: 100%;
-    background-image: url("../images/footer.jpg");
-    position: relative;
-    background-size: cover;
-    min-height: 500px;
-    background-repeat: no-repeat;
-    color: #fff;
-    padding: 50px 0 50px 0;
-
-
+/*map*/
+.map .line{
+    width: 200px;
+    background: #ddd;
+    height: 1px;
+    margin: auto;
 }
-.contact .conrad{
-    margin-top: 100px;
-}
-.contact .conrad img{
-    width:34%;
-    height: 80px;
-    float:left;
-    margin-right: 20px;
+.map .line span{
     display: block;
+    width:100px;
+    background: #1a53ff;
+    height: 4px;
+    margin: auto;
 }
-.contact .conrad .detail{
+.map p#txt{
+    color: #555;
     width:50%;
-    float: left;
-    
+    margin: 30px auto;
 }
-.contact .conrad .detail p{
-    font-size: 13px;
+.map{
+    padding:50px 50px;
 }
-.contact .conrad .detail .time{
-    position: relative;
-    font-style: italic;
-    color: #24a3d8;
-    font-size:11px; 
-}
-
-.contact .conrad h3{
-font-size: 23px;
-}
-.contact .conrad a{
+.map .contactus input[type="email"]{
     display: block;
-    line-height: 2.5;
+    width: 50%;
+        margin:auto;
+       
+
+}
+.map .contactus{
+    background: #ccc;
+    padding-top: 100px;
+}
+.map .contactus img{
+    width: 40%;
+}
+.map .contactus h1{
+    color: #000;
+    font-size: 26px;
+}
+.map .contactus input[type="password"]{
+    display: block;
+    width: 50%;
+    margin:auto;
+}
+.map .contactus button{
+     background: #22923c;
     color: #fff;
-    text-decoration: none;
-}
-.contact .conrad input{
-    margin-bottom: 6%;
-    border-radius: 5px;
-}
-.contact .conrad input[type="text"],.contact .conrad input[type="email"]{
-    background: none;
+    outline: 0;
     border: 0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin:20px auto;
+     opacity: 0.6;
+  transition: 0.3s;
+}
+.map .contactus button:hover{
+    opacity: 1;
+}
+@media(max-width: 575px){
+    .map .row iframe{
+        width:400px;
+    }
+}
+/*footer*/
+.footer{
+    background: #333;
+    color: #fff;
+    padding:50px 50px;
+}
+.footer h3{
     border-bottom: 1px solid #888;
 }
-.contact .conrad input[type="submit"]{
-    display: block;
-    background: transparent;
-    color: #fff;
-    border-radius: 10px;
-    padding:2px 7px 5px 9px;
-    border: 1px solid #888;
+.footer p{
+    font-size: 12px;
+    width: 82%;
 }
+.footer i{
+    width:15%;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.footer i#face{
+    background:#2d4278;
 
-/*footer2*/
-.footer{
-    width: 100%;
-    height: 80px;
-    background: blue;
+}
+.footer i#twitter{
+    background: #0087ba;
+}
+.footer i#linked{
+    background: #cb2026;
+}
+.footer i#google{
+    background: #dd4a3a;
+}
+.footer i#yotube{
+    background: #005983;
+}
+.footer ul li {
+    border-bottom: 1px solid #555;
+}
+.footer button{
+        margin: 6px;
+    background: #555;
     color: #fff;
+    outline: 0;
+    border: 0;
+    padding: 5px 10px;
+     opacity: 0.6;
+  transition: 0.3s;
 }
-.footer .open{
-    float: left;
-    line-height: 5;
+.footer button:hover{
+background: #22963c;
+color: #fff;
+border-radius: 10px;
+opacity: 1;
 }
-.footer .close{
-    float: right;
+.footer img{
+    width:30%;
+}
+/*footer2*/
+.footer2{
+    padding: 20px 20px;
+    color: #fff;
+    background: #000;
     
 }
-.footer .close h4{
-    line-height: 3;
+.footer2 i{
+    color: #22963c;
+}
+.footer2 .list ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+.footer2 .list ul li a{
     color: #fff;
+}
+.footer2 .list ul li a:hover{
+    display: block;
+    background: #22963c;
+    padding: 10px;
+    border-radius: 10px;
+
 }

@@ -3,7 +3,7 @@ $(document).ready(function () {
   'use strict';
 
   $(".toggle-nav").click(function () {
-    $(".nav-list").slideDown();
+    $(".nav-list").slideToggle();
   }); 
 });
 
