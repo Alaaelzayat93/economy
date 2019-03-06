@@ -41,7 +41,7 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 };
-});
+
 
 window.onload = function () {
   "use strict";

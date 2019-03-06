@@ -476,7 +476,7 @@ section.question .images .left-2{
 }
 
 /*footer*/
-footer{
+.contact{
     width: 100%;
     background-image: url("../images/footer.jpg");
     position: relative;
@@ -488,50 +488,50 @@ footer{
 
 
 }
-footer .conrad{
+.contact .conrad{
     margin-top: 100px;
 }
-footer .conrad img{
+.contact .conrad img{
     width:34%;
     height: 80px;
     float:left;
     margin-right: 20px;
     display: block;
 }
-footer .conrad .detail{
+.contact .conrad .detail{
     width:50%;
     float: left;
     
 }
-footer .conrad .detail p{
+.contact .conrad .detail p{
     font-size: 13px;
 }
-footer .conrad .detail .time{
+.contact .conrad .detail .time{
     position: relative;
     font-style: italic;
     color: #24a3d8;
     font-size:11px; 
 }
 
-footer .conrad h3{
+.contact .conrad h3{
 font-size: 23px;
 }
-footer .conrad a{
+.contact .conrad a{
     display: block;
     line-height: 2.5;
     color: #fff;
     text-decoration: none;
 }
-footer .conrad input{
+.contact .conrad input{
     margin-bottom: 6%;
     border-radius: 5px;
 }
-footer .conrad input[type="text"],footer .conrad input[type="email"]{
+.contact .conrad input[type="text"],.contact .conrad input[type="email"]{
     background: none;
     border: 0;
     border-bottom: 1px solid #888;
 }
-footer .conrad input[type="submit"]{
+.contact .conrad input[type="submit"]{
     display: block;
     background: transparent;
     color: #fff;
