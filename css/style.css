@@ -232,7 +232,7 @@ color: #fff;
 }
 .economy .row .card:hover .card-bottom-top{
     display: inline;
-    transition: all 0.10s ease-in-out;
+    transition: all 5s ease-in-out;
 }
 .economy .row h4{
 font-size: 2rem;
@@ -608,7 +608,7 @@ opacity: 1;
     
 }
 .footer2 i{
-    color: #22963c;
+    color: #0033cc;
 }
 .footer2 .list ul {
     display: flex;
@@ -620,7 +620,7 @@ opacity: 1;
 }
 .footer2 .list ul li a:hover{
     display: block;
-    background: #22963c;
+    background: #0033cc;
     padding: 10px;
     border-radius: 10px;
 
