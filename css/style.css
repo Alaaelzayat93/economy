@@ -74,6 +74,7 @@ width:100%;
     margin-top: 14px;
 float: right;
 list-style: none;
+overflow: hidden;
 
 }
 header .nav-list  li{
@@ -512,9 +513,10 @@ section.question .images .left-2{
 
 /* Pricing header */
 .price .header {
-  background-color: #111;
+  background-color: #0033cc;
   color: white;
   font-size: 25px;
+  border-radius: 10px;
 }
 
 /* List items */
@@ -541,6 +543,10 @@ section.question .images .left-2{
   text-align: center;
   text-decoration: none;
   font-size: 18px;
+}
+.button:hover{
+    opacity: 0.6;
+    color:#fff;
 }
 .price:hover {
     transform: translateY(-10px);
