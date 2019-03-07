@@ -430,11 +430,12 @@ section.question .images .left-2{
     float:left;
     width: 40%;
 }
+
 /*ACCORDION*/
 /* Style the buttons that are used to open and close the accordion panel */
 .question .Box .accordion {
   background-color: #ccc;
-  color: #000;
+  color: #0033cc;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -443,6 +444,7 @@ section.question .images .left-2{
   outline: none;
   font-size: 17px;
   transition: 0.4s;
+  font-weight: bold;
 }
 
 
@@ -471,6 +473,86 @@ section.question .images .left-2{
     width:100%;
 }
 
+}
+/*prices*/
+/* Create three columns of equal width */
+.pricing{
+    margin-left:60px;
+}
+.pricing .line{
+    width: 200px;
+    background: #ddd;
+    height: 1px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.pricing .line span{
+    display: block;
+    width:100px;
+    background: #1a53ff;
+    height: 4px;
+    margin: auto;
+}
+
+.columns{
+    width:70%;
+
+}
+/* Style the list */
+.price {
+    padding:100px 100px;
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+
+/* Pricing header */
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: #eee;
+  font-size: 25px;
+  color:#0033cc;
+
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #0033cc;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+.price:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* Change the width of the three columns to 100% 
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
 }
 /*map*/
 .map .line{
@@ -540,7 +622,7 @@ section.question .images .left-2{
 }
 @media(max-width: 575px){
     .map .row iframe{
-        width:400px;
+        width:300px;
     }
 }
 /*footer*/
@@ -625,3 +707,4 @@ opacity: 1;
     border-radius: 10px;
 
 }
+
