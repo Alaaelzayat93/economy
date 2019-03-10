@@ -25,7 +25,7 @@ $(document).ready(function () {
   /*Start   Nice  Scroll*/
 
 $("body").niceScroll({
-  cursorcolor:"#6666FF",
+  cursorcolor:"red",
   cursorwidth:"16px"
 });
 
