@@ -635,9 +635,18 @@ section.question{
     .map{
         padding: 50px 0;
     }
+    .map .contactus h1{
+        margin-top: 10px;
+    }
+    .map .contactus input{
+        width: 100%;
+    }
     .map p#txt{
         width: 100%;
     }
+     .map .contactus button{
+        padding: 10px 30px;
+     }
 }
 /*footer*/
 .footer{
@@ -720,5 +729,10 @@ opacity: 1;
     padding: 10px;
     border-radius: 10px;
 
+}
+@media(max-width: 575px){
+    .footer{
+        padding: 50px 0;
+    }
 }
 
