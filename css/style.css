@@ -236,7 +236,7 @@ color: #333;
 }
 @media (max-width: 575px){
     .economy .row .root p#fast{
-    width: 200%;
+    
 }
 .economy .row .card{
     margin-top: 20px;
