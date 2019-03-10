@@ -237,7 +237,7 @@ color: #333;
 }
 @media (max-width: 575px){
     .economy .row .root p#fast{
-    width: 105%
+    width: 100%;
 }
 .economy .row .card{
     margin-top: 20px;
@@ -440,7 +440,7 @@ section.question .images .left-2{
         width:200%;
     }
     section.question .images{
-        width: 100%;
+        width: 50%;
     }
     section.question .images .right-1
     ,section.question .images .right-2,
