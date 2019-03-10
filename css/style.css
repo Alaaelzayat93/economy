@@ -1,7 +1,5 @@
 /*general*/
-.row{
-    margin: 0;
-}
+
 *,*:after,*:before
 {
     margin: 0;
@@ -11,10 +9,7 @@
     -o-box-sizing:border-box;
 
 }
-ul {
-    margin:0;
-    padding:0;
-}
+
 html, body { max-width: 100%;}
 body{
     font-family: 'Roboto Slab', serif;
@@ -31,64 +26,40 @@ body{
     background: rgba(0,0,0,0.5);
 
 }
-header i.fa{
-    position: absolute;
-    right: 20px;
-    top: 40px;
-    cursor: pointer;
-    display: none;
-}
-   
-.sticky{
-    background:#5E5EDE;
-    color: #fff;
-      position: fixed;
-  top: 0;
-  width: 80%;
-z-index: 99999;
-}
-/*********header***********/
-header{
-    background: #fff;
-        padding-top:2em;
 
-}
-header .row {
-    width:100%;
-    box-shadow: 4px 5px 45px #333;
-    padding:10px 0;
-    background: #0033cc;
-}
-header .logo{
-    width:20%;
-    
-}
-header .logo h2{
-    color:#fff;
-}
-header .logo h2 span{
-    text-decoration: underline;
-}
-header .nav-list{
+/*********header***********/
+
+
+ .navbar{
 width:100%;
-    margin-top: 14px;
+ 
 float: right;
 list-style: none;
 overflow: hidden;
+background: #0033cc;
 
 }
-header .nav-list  li{
+.navbar .navbar-brand{
+    color: #fff;
+}
+header .navbar ul.navbar-nav{
+    margin-left: 10%;
+}
+.navbar .navbar-brand span{
+    border-bottom: 2px solid #fff;
+}
+.navbar-light .navbar-nav .active>.nav-link{
+    color: #fff;
+}
+header .navbar .nav-item .nav-link{
 margin-left: 40px;
 display:inline-block;
-
-}
-header .nav-list  li a{
-    color:#fff;
-    
+color: #fff;
 
 }
 
-header nav .nav-list a:hover{
+
+header .navbar .nav-item .nav-link:hover{
     color: #fff;
     background: linear-gradient(60deg ,#5555ff,#90f);
     padding: 8px 15px;
@@ -96,7 +67,7 @@ header nav .nav-list a:hover{
     border-radius: 5px;
     transition: 2s all ease-in-out;
 }
-@media (max-width: 768px){
+@media (max-width: 575px){
     header{background: #000;}
     header .nav-list{
         display: block;
@@ -110,19 +81,16 @@ header nav .nav-list a:hover{
         font-weight: 300;
         font-size: 20px
     }
-    header .logo{
+    header .brand{
         text-align: center;
     }
 
-    header i.fa{
-        display: block;
-        color: red;
-    }
+    
        
 
 
 
-    header nav .nav-list{
+    header nav .navbar{
         display: none;
         text-align: center;
     }
@@ -190,7 +158,7 @@ color: #fff;
     background: #333;
     color: #fff;
 }
-@media(max-width: 768px){
+@media(max-width: 575px){
 .home .para{
     font-size: 20px;
 }
@@ -368,7 +336,7 @@ section.services .feet p{
 .blog h2 span{
    color: #1a53ff; 
 }
-@media (max-width: 768px){
+@media (max-width: 575px){
     .blog h2{font-size: 25px !important}
     }
 
@@ -455,7 +423,7 @@ section.question .images .left-2{
   overflow: hidden;
   color: #555;
 }
-@media(max-width: 768px){
+@media(max-width: 575px){
     .question .Box .accordion{
         width: 156%;
 
