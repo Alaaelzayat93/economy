@@ -185,7 +185,9 @@ color: #fff;
  display: block;
  
 }
-
+.economy .row .root p#fast{
+    color: #8e8888;
+}
 
 .economy .row .card img{
     width: 100%;
@@ -234,11 +236,17 @@ color: #333;
     transition:all 0.5s ease-in-out;
 }
 @media (max-width: 575px){
+    .economy{
+        padding: 20px 10px;
+    }
      .economy .row .root{
         margin: 0;
      }
     .economy .row .root p#fast{
     width: 100%;
+}
+.economy .row .root .card {
+    width: 100% !important;
 }
 .economy .row .card{
     margin-top: 20px;
