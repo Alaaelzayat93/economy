@@ -432,6 +432,8 @@ section.question .images .left-2{
 @media(max-width: 575px){
     .question .Box .accordion{
         width: 156%;
+        margin-bottom: 20px;
+        display: block;
 
     }
     .question .Box .panal {
