@@ -324,6 +324,10 @@ section.services .feet p{
 @media(max-width: 575px){
     .services{
         background: #fff;
+        padding: 50px 0;
+    }
+    section.services p#txt{
+        width: 100%;
     }
 }
 /*blog*/
@@ -352,7 +356,8 @@ section.services .feet p{
    color: #1a53ff; 
 }
 @media (max-width: 575px){
-    .blog h2{font-size: 25px !important}
+    .blog h2{font-size: 25px !important;
+        width: 100%;}
     }
 
 /*why-choose-us*/
@@ -439,6 +444,9 @@ section.question .images .left-2{
   color: #555;
 }
 @media(max-width: 575px){
+    section.why-choose-us p#txt{
+        width: 100%;
+    }
     .question .Box .accordion{
         width: 156%;
         margin-bottom: 20px;
