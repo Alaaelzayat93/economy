@@ -185,9 +185,7 @@ color: #fff;
  display: block;
  
 }
-.economy .row .root p#fast{
-    width: 131%;
-}
+
 
 .economy .row .card img{
     width: 100%;
@@ -236,6 +234,9 @@ color: #333;
     transition:all 0.5s ease-in-out;
 }
 @media (max-width: 575px){
+     .economy .row .root{
+        margin: 0;
+     }
     .economy .row .root p#fast{
     width: 100%;
 }
