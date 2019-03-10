@@ -447,17 +447,24 @@ section.question .images .left-2{
     section.why-choose-us p#txt{
         width: 100%;
     }
+    section.why-choose-us .row .col {
+    display: flex;
+    margin: 30px 0;
+}
+section.question{
+    padding: 100px 20px;
+}
     .question .Box .accordion{
-        width: 156%;
+        width: 100%;
         margin-bottom: 20px;
         display: block;
 
     }
     .question .Box .panal {
-        width:200%;
+        width:100%;
     }
     section.question .images{
-        width: 50%;
+        width: 100%;
     }
     section.question .images .right-1
     ,section.question .images .right-2,
@@ -548,9 +555,11 @@ section.question .images .left-2{
 
 /* Change the width of the three columns to 100% 
 (to stack horizontally on small screens) */
-@media only screen and (max-width: 600px) {
-  .columns {
+@media (max-width: 575px) {
+  .pricing {
     width: 100%;
+    margin: 0;
+    padding: 10px;
   }
 }
 /*map*/
@@ -622,6 +631,12 @@ section.question .images .left-2{
 @media(max-width: 575px){
     .map .row iframe{
         width:300px;
+    }
+    .map{
+        padding: 50px 0;
+    }
+    .map p#txt{
+        width: 100%;
     }
 }
 /*footer*/
