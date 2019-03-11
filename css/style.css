@@ -560,6 +560,9 @@ section.question{
     margin: 0;
     padding: 10px;
   }
+  .columns{
+    margin-bottom: 10PX;
+  }
 }
 /*map*/
 .map .line{
