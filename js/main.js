@@ -1,4 +1,4 @@
-/*global $, window, document*/
+/*global $, window, document
 $(document).ready(function () {
   'use strict';
 
@@ -6,11 +6,11 @@ $(document).ready(function () {
     $(".nav-list").slideToggle();
   }); 
 });
+*/
 
 
 
-
-/*when scroll body*/
+/*when scroll body
   $(window).scroll(function () {
 
     var vc = $(this).scrollTop(); //scroll size
@@ -19,7 +19,7 @@ $(document).ready(function () {
     } else {
       $('header').removeClass('sticky');
     }
-  });
+  });*/
 
 
   /*Start   Nice  Scroll*/
@@ -67,7 +67,7 @@ window.onload = function () {
       txt5.style = "display:none";
 }
 
-/*        nav   sticky   */
+/*        nav   sticky   
 
 window.onscroll = function () {
   myFunction()
@@ -82,7 +82,7 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
-}
+}*/
 
 
 
