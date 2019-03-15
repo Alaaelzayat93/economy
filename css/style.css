@@ -43,9 +43,9 @@ background: #0033cc;
 .navbar .navbar-brand{
     color: #fff;
 }
-header .navbar ul.navbar-nav{
+/*header .navbar ul.navbar-nav{
     margin-left: 10%;
-}
+}*/
 .navbar .navbar-brand span{
     border-bottom: 2px solid #fff;
 }
@@ -53,8 +53,7 @@ header .navbar ul.navbar-nav{
     color: #fff;
 }
 header .navbar .nav-item .nav-link{
-margin-left: 40px;
-display:inline-block;
+margin-left: 20px;
 color: #fff;
 
 }
@@ -63,39 +62,12 @@ color: #fff;
 header .navbar .nav-item .nav-link:hover{
     color: #fff;
     background: linear-gradient(60deg ,#5555ff,#90f);
-    padding: 8px 15px;
+    /*padding: 8px 15px;*/
     text-decoration: none;
     border-radius: 5px;
     transition: 2s all ease-in-out;
 }
-@media (max-width: 575px){
-    header{background: #000;}
-    header .nav-list{
-        display: block;
-    }
-    header .nav-list li {
-        display: block
-    }
-    header .nav-list li a {
-        letter-spacing: 5px;
-        margin-bottom: 3em;
-        font-weight: 300;
-        font-size: 20px
-    }
-    header .brand{
-        text-align: center;
-    }
 
-    
-       
-
-
-
-    header nav .navbar{
-        display: none;
-        text-align: center;
-    }
-}
 
 /*end header*/
 /*home sections*/
